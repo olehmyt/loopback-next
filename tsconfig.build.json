@@ -3,18 +3,40 @@
     "tsconfig.build.json is used by eslint to constrain files to be checked",
     "tsconfig.json is used by tsc"
   ],
-  "extends": "./packages/build/config/tsconfig.common.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true
+  },
   "include": [
-    "acceptance",
-    "fixtures",
-    "benchmark",
-    "examples",
-    "packages",
-    "extensions"
+    "acceptance/*/src/**/*.ts",
+    "benchmark/src/**/*.ts",
+    "examples/*/src/**/*.ts",
+    "extensions/*/src/**/*.ts",
+    "fixtures/*/src/**/*.ts",
+    "fixtures/tsdocs-monorepo/packages/*/src/**/*.ts",
+    "fixtures/tsdocs-monorepo/packages/**/*.js",
+    "packages/*/src/**/*.ts",
+
+    "**/.eslintrc.js",
+    "acceptance/*/docker.setup.js",
+    "bin/*.js",
+    "commitlint.config.js",
+    "docs/bin/*.js",
+    "examples/lb3-application/lb3app/**/*.js",
+    "examples/passport-login/web-application/express-app.js",
+    "extensions/context-explorer/public/**/*.js",
+    "packages/booter-lb3app/fixtures/**/*.js",
+    "packages/build/**/*.js",
+    "packages/build/**/*.ts",
+    "packages/cli/**/*.js",
+    "packages/cli/**/*.ts",
+    "packages/eslint-config/eslintrc.js",
+    "packages/repository/examples/**/*.js",
+    "packages/repository/examples/**/*.ts",
+    "packages/tsdocs/bin/*.js"
   ],
   "exclude": [
-    "**/node_modules/**",
-    "**/dist/**",
-    "**/*.d.ts"
+    "node_modules"
   ]
 }
