@@ -64,6 +64,9 @@ LoopBack 4 comes with the following example projects.
   [Todo example](https://github.com/strongloop/loopback-next/tree/master/examples/todo)
   with JWT authentication.
 
+- **[build jwt authentication from scratch](https://github.com/HrithikMittal/Loopback4-auth)**:
+  An example to enable JWT authentication in a LoopBack application with detailed steps.
+
 ### Other examples
 
 - **[context](https://github.com/strongloop/loopback-next/tree/master/examples/context)**:

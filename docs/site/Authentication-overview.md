@@ -6,6 +6,8 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Authentication-overview.html
 ---
 
+## Overview
+
 Security is of paramount importance when developing a web or mobile application
 and usually consists of two distinct pieces:
 
@@ -48,6 +50,8 @@ the JWT extension `@loopback/jwt-authentication`, which helps in implementing
 JWT-based authentication to the system and should be provided by extension
 developers.
 
+## Tutorials
+
 The authentication system is highly extensible and pluggable. It's easy to get
 started with. While there are more advanced features to explorer - of which are
 beneficial when you build more complicated and larger scale applications, it
@@ -68,3 +72,7 @@ we've broken down the documentations into several parts:
   Particularly for extension developers.
 - [Use **Express Passport** strategies](Authentication-passport.md): The usage
   of passport adapter module `@loopback/authentication-passport`.
+
+## Examples
+
+There is a list of authentication related examples created by LoopBack team or contributed by community members. They can be found in [authentication examples](https://loopback.io/doc/en/lb4/Examples.html#authentication-and-authorization-related-examples).
